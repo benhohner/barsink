@@ -78,7 +78,7 @@ gulp.task('scripts', function() {
 });
 
 /**
- * Imagess Task
+ * Images Task
  */
 gulp.task('images', function() {
   var pngFilter = filter(path.src.img + '/*.png');
