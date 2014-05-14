@@ -1,6 +1,6 @@
 {
   "name": "barsink",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Everything but the kitchen sink for your front end.",
   "main": "gulpfile.js",
   "scripts": {
@@ -9,7 +9,29 @@
   "author": "Ben Hohner",
   "license": "MIT",
   "devDependencies": {
+    "bower": "1.x.x",
     "gulp": "3.x.x",
+    "connect": "2.x.x",
+    "gulp-concat": "2.x.x",
+    "gulp-changed": "0.x.x",
+    "gulp-clean": "0.x.x",
+    "gulp-ignore": "1.x.x",
+    "gulp-filter": "0.x.x",
+    "gulp-rename": "1.x.x",
+    "gulp-livereload": "1.x.x",
+    "gulp-plumber": "0.x.x",
+    "gulp-size": "0.x.x",
+    "gulp-watch": "0.x.x",
+    "gulp-jade": "0.x.x",
+    "gulp-minify-html": "0.x.x",
+    "gulp-stylus": "0.x.x",
+    "gulp-autoprefixer": "0.x.x",
+    "gulp-minify-css": "0.x.x",
+    "gulp-coffee": "0.x.x",
+    "gulp-coffeelint": "0.x.x",
+    "gulp-uglify": "0.x.x",
+    "gulp-imagemin": "0.x.x",
+    "gulp-bower-files": "0.x.x"
   },
   "engine": "node >= 0.10.26"
 }

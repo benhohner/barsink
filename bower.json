@@ -1,0 +1,23 @@
+{
+  "name": "barsink",
+  "version": "0.0.2",
+  "homepage": "https://github.com/benhohner/barsink",
+  "authors": [
+    "Ben Hohner <benhohner@gmail.com>"
+  ],
+  "description": "Everything for your front end but the kitchen sink.",
+  "main": "gulpfile.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
