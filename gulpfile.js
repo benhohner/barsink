@@ -170,6 +170,6 @@ gulp.task('clean', function() {
 gulp.task('default', ['markup', 'scripts', 'styles', 'images', 'bower', 'watch', 'livereload']);
 
 /**
- * Production Task
+ * Deploy Raw Task
  */
-gulp.task('production', ['clean', 'markup', 'styles', 'scripts', 'images', 'bower']);
+gulp.task('deploy-raw', ['clean', 'markup', 'styles', 'scripts', 'images', 'bower']);

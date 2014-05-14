@@ -1,5 +1,10 @@
 # Changes
 
+## v0.0.3 (2014-05-14 May 14, 2014)
+
+* Changed gulp production to gulp-deploy-raw.
+* Added docs to README.
+
 ## v0.0.2 (2014-05-14 May 14, 2014)
 
 * Finished first alpha build.

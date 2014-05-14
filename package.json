@@ -1,6 +1,6 @@
 {
   "name": "barsink",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Everything but the kitchen sink for your front end.",
   "main": "gulpfile.js",
   "scripts": {
