@@ -5,7 +5,6 @@ var plumber = require('gulp-plumber');
 var clean = require('gulp-clean');
 var filter = require('gulp-filter');
 var size = require('gulp-size');
-var bowerfiles = require('gulp-bower-files')
 
 // Markup
 var jade = require('gulp-jade');
@@ -35,7 +34,6 @@ var path = {
     'js': './build/js',
     'css': './build/css',
     'img': './build/img',
-    'lib': './build/lib',
     'root': './build'
   }
 }
@@ -107,18 +105,6 @@ gulp.task('images', function() {
 });
 
 /**
- * Bower Task
- */
-gulp.task('bower', function() {
-  return gulp.src(path.src.img)
-    .pipe(watch())
-    .pipe(plumber())
-    .pipe(bowerfiles())
-    .pipe(size({ showFiles: true }))
-    .pipe(gulp.dest(path.build.lib));
-});
-
-/**
  * Watch Task
  */
 gulp.task('watch', function() {
@@ -167,9 +153,9 @@ gulp.task('clean', function() {
 /**
  * Default Task
  */
-gulp.task('default', ['markup', 'scripts', 'styles', 'images', 'bower', 'watch', 'livereload']);
+gulp.task('default', ['markup', 'scripts', 'styles', 'images', 'watch', 'livereload']);
 
 /**
  * Deploy Raw Task
  */
-gulp.task('deploy-raw', ['clean', 'markup', 'styles', 'scripts', 'images', 'bower']);
+gulp.task('deploy-raw', ['clean', 'markup', 'styles', 'scripts', 'images']);

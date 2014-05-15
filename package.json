@@ -9,7 +9,6 @@
   "author": "Ben Hohner",
   "license": "MIT",
   "devDependencies": {
-    "bower": "1.x.x",
     "gulp": "3.x.x",
     "connect": "2.x.x",
     "gulp-concat": "2.x.x",
@@ -30,8 +29,7 @@
     "gulp-coffee": "0.x.x",
     "gulp-coffeelint": "0.x.x",
     "gulp-uglify": "0.x.x",
-    "gulp-imagemin": "0.x.x",
-    "gulp-bower-files": "0.x.x"
+    "gulp-imagemin": "0.x.x"
   },
   "engine": "node >= 0.10.26"
 }

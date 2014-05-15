@@ -12,7 +12,6 @@ You can also use Gulp's live reload feature to see your changes almost instantly
 *   Jade
 *   Stylus
 *   Autoprefixer
-*   Bower Support
 *   CoffeeScript
 *   Imagemin
 
@@ -24,9 +23,7 @@ You can also use Gulp's live reload feature to see your changes almost instantly
 
     1.  Install Node.js and NPM
     2.  If you try to install things and it asks you for admin access, try this `sudo chown -R $USER /usr/local/{share/man,bin,lib/node,include/node}`
-    3.  Make sure Bower is installed globally `npm install -g bower`
 1.  `npm install`
-2.  `bower install`
 
 #### Tasks
 
@@ -76,12 +73,6 @@ or deploy raw:
 `gulp images`
 
 1.  Imagemin
-
-##### Bower
-
-`gulp bower`
-
-1.  Copy Bower files to `build/lib/`
 
 ##### Watch
 

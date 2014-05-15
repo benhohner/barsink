@@ -1,5 +1,9 @@
 # Changes
 
+## v0.0.4 (2014-05-14 May 14, 2014)
+
+* Removed Bower support due to upstream issues with gulp-bower-files.
+
 ## v0.0.3 (2014-05-14 May 14, 2014)
 
 * Changed gulp production to gulp-deploy-raw.
