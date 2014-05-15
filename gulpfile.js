@@ -28,7 +28,8 @@ var path = {
     'coffee': './src/scripts/**/*.coffee',
     'stylus': './src/styles/**/*.styl',
     'img': './src/img/**/*',
-    'jade': './src/markup/**/*.jade'
+    'jade': './src/markup/**/*.jade',
+    'misc': './src/misc/**/*'
   },
   'build': {
     'js': './build/js',
@@ -105,6 +106,19 @@ gulp.task('images', function() {
 });
 
 /**
+ * Misc Task
+ */
+gulp.task('misc', function(){
+  var gitFilter = filter('!' + path.src.misc + '/.gitkeep');
+  return gulp.src(path.src.misc)
+    .pipe(watch())
+    .pipe(plumber())
+    .pipe(gitFilter)
+    .pipe(size({ showFiles: true }))
+    .pipe(gulp.dest(path.build.root));
+});
+
+/**
  * Watch Task
  */
 gulp.task('watch', function() {
@@ -116,6 +130,7 @@ gulp.task('watch', function() {
   gulp.watch(path.src.styles, ['styles']).on('change', update);
   gulp.watch(path.src.img, ['images']).on('change', update);
   gulp.watch(path.src.jade, ['markup']).on('change', update);
+  gulp.watch(path.src.misc, ['misc']).on('change', update);
 });
 
   
@@ -146,16 +161,18 @@ gulp.task('livereload', ['serve'], function() {
  * Clean Task (Blocking)
  */
 gulp.task('clean', function() {
+  var gitFilter = filter('!' + path.src.misc + '/.gitkeep');
   return gulp.src(path.build.root + "/**/*", { read: false })
+    .pipe(gitFilter)
     .pipe(clean({ force: true }));
 });
 
 /**
  * Default Task
  */
-gulp.task('default', ['markup', 'scripts', 'styles', 'images', 'watch', 'livereload']);
+gulp.task('default', ['markup', 'scripts', 'styles', 'images', 'misc', 'watch', 'livereload']);
 
 /**
  * Deploy Raw Task
  */
-gulp.task('deploy-raw', ['clean', 'markup', 'styles', 'scripts', 'images']);
+gulp.task('deploy-raw', ['clean', 'markup', 'styles', 'scripts', 'images', 'misc']);

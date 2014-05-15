@@ -2,7 +2,8 @@
 
 ## v0.0.4 (2014-05-14 May 14, 2014)
 
-* Removed Bower support due to upstream issues with gulp-bower-files.
+* Added misc task for miscellaneous files like favicons, vendor files, etc.
+* Removed Bower support due to not needing it and gulp plugin bugs.
 
 ## v0.0.3 (2014-05-14 May 14, 2014)
 

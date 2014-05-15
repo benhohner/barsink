@@ -93,8 +93,20 @@ or deploy raw:
 1.  Start LiveReload server (default port `35729`)
 
 ##### Clean
+
 `gulp clean`
 
 1.  Delete all the files in the `build/` folder
+
+##### Misc
+
+`gulp misc`
+
+1.  Copy 1 for 1 all files from `src/` to `build/`
+
+This can be useful for miscellaneous files like favicons, robots.txt, or
+vendor files which can't go through the normal pipe.
+
+***
 
 Crafted by Ben Hohner. Source under [MIT](http://opensource.org/licenses/MIT) licence.
