@@ -151,7 +151,7 @@ gulp.task('serve', function(next) {
  */
 gulp.task('livereload', ['serve'], function() {
   var server = livereload();
-  gulp.watch(path.build.root + '/**').on('change', function(file) {
+  gulp.watch(path.build.root + '/**/*').on('change', function(file) {
       console.log(file.path + ' Changed. Updating Livereload.');
       server.changed(file.path);
   });

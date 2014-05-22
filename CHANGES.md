@@ -1,4 +1,8 @@
 # Changes
+## v0.0.5 (2014-05-23 May 23, 2014)
+### Bugs
+
+* Added /* to the watch file path to fix gulp-livereload picking up extra changes.
 
 ## v0.0.4 (2014-05-14 May 14, 2014)
 
